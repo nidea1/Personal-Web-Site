@@ -1,0 +1,16 @@
+/* about.html */
+
+.skill-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.25rem!important;
+    margin-left: 0.25rem!important;
+    margin-top: 0.25rem!important;
+    margin-bottom: 0.25rem!important;
+}
+
+/* _navbar.html */
+
+.fa-dark {
+    color: rgb(46, 46, 46);
+}

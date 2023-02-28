@@ -1,0 +1,33 @@
+{%load static%}
+ <!-- START HEADER -->
+
+ <header class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom sticky-top bg-white shadow">
+    <a href="{%url 'index'%}" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="{%static 'base/img/me.jpeg'%}" width="40" height="40" role="img" alt="LOGO" class="me-2 rounded-circle shadow">
+    </a>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="{%url 'index'%}"><i class="fas fa-home fa-fw fa-dark"></i></a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#"><i class="fab fa-linkedin fa-lg fa-fw fa-dark"></i></a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#"><i class="fab fa-github fa-lg fa-fw fa-dark"></i></a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#"><i class="fab fa-hackerrank fa-lg fa-fw fa-dark"></i></a>
+        </li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="{%url 'about'%}" class="nav-link px-2 link-dark fw-semibold">About</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark fw-semibold">Projects</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark fw-semibold">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+
+<!-- END HEADER -->
