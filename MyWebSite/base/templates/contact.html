@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+
+    <!-- START CONTENT -->
+    <div class="container">
+        <div class="d-flex justify-content-center pt-3 pb-5 text-center">
+            <div class="col-md-8 col-lg-6 d-flex flex-lg-row-reverse justify-content-center align-items-center p-5 border rounded-3 shadow-lg">
+                <form action="#" method="post">
+                    <h1 class="display-5 fw-bold text-center">CONTACT ME</h1>
+                    <span class="d-flex flex-wrap justify-content-center mb-1"><hr style="width: 50%;"></span>
+                    <h5 class="text-center">Here you will find more information about me, what I do, and my current skills.</h5>
+                    <span class="d-flex flex-wrap justify-content-center mb-1"><hr style="width: 75%;"></span>
+                    <div class="row row-fluid justify-content-center">
+                        <div class="col-lg-5 col-md-6 col-sm-6 mb-2 mb-sm-0">
+                            {{form.first_name}}
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-sm-6">
+                            {{form.last_name}}
+                        </div>
+                    </div>
+                    <div class="row row-fulid justify-content-center my-2">
+                        <div class="col-lg-5 col-md-6 col-sm-6 mb-2 mb-sm-0">
+                            {{form.email}}
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-sm-6">
+                            {{form.phone}}
+                        </div>
+                    </div>
+                    <div class="row row-fulid justify-content-center my-2">
+                        <div class="col-lg-10 col-md-12 col-sm-12">
+                            {{form.message}}
+                        </div>
+                    </div>
+                    <div class="row row-fulid mt-4">
+                        <div class="text-center pd">
+                            <button type="submit" value="SEND" id="submit" class="btn btn-lg text-bg-dark bg-gradient fw-semibold shadow">Submit -></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+
+{% endblock %}

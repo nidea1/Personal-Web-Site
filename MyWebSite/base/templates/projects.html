@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+
+    <!-- START CONTENT -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row d-flex flex-lg-row-reverse justify-content-center align-items-center g-5 p-5 my-5 border rounded-3 shadow-lg">
+            <div class="col-10 col-lg-6 my-5">
+                <img src="{%static 'projects/img/defaultproject.png'%}" class="d-block mx-lg-auto img-fluid shadow" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6 text-center text-lg-start my-5">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Project name</h1>
+                <p class="lead my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat a ipsum consequat mattis at id eros. Sed suscipit.</p>
+                <div>
+                    <button type="button" class="btn btn-lg text-bg-dark bg-gradient fw-semibold shadow px-4 mt-2">PROJECT DETAIL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- END CONTENT -->
+
+{% endblock %}
