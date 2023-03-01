@@ -1,5 +1,6 @@
 from django import forms
 from .models import Contact
+from phonenumber_field.formfields import PhoneNumberField
 
 class ContactForm(forms.ModelForm):
     first_name = forms.CharField(max_length=100, required=True, widget=forms.TextInput(attrs={
@@ -14,9 +15,11 @@ class ContactForm(forms.ModelForm):
         'class': 'form-control',
         'placeholder': 'E-Mail'
     }))
-    phone = forms.CharField(required=True, widget=forms.NumberInput(attrs={
+    phone = PhoneNumberField(required=True, widget=forms.NumberInput(attrs={
         'class': 'form-control',
-        'placeholder': '+90'
+        'type' : 'tel',
+        'pattern' : '[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{4}',
+        'placeholder': '+90-123-456-7890'
     }))
     message = forms.CharField(widget=forms.Textarea(attrs={
         'class': 'form-control',
